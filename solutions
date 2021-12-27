@@ -1,0 +1,5 @@
+
+By default SELinux only allows the web server to make outbound connections to a limited set of ports.
+so add your port
+
+semanage port --add --type http_port_t --proto tcp 7777
